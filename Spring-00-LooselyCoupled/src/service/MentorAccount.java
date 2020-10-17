@@ -15,7 +15,5 @@ public class MentorAccount {
         this.mentor.createAccount();
     }
 
-    public static void main(String[] args) {
 
-    }
 }
