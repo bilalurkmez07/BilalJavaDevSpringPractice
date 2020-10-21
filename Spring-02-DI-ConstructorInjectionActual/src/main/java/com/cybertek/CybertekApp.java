@@ -2,6 +2,7 @@ package com.cybertek;
 
 import com.cybertek.interfaces.Course;
 //import com.cybertek.services.Java;
+import com.cybertek.services.Java;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,6 +16,8 @@ public class CybertekApp {
         //Course course = (Course )container.getBean("java");
 
         Course course = container.getBean("java", Course.class);
+
+        //((Java)course).x = 5;
 
         course.getTeachingHours();
 
